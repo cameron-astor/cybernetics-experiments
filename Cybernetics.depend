@@ -435,24 +435,29 @@
 	<assert.h>
 	<SFML/Graphics.hpp>
 
-1582448300 source:c:\users\camer\codeblocks\cybernetics\src\thermostat.cpp
+1582755984 source:c:\users\camer\codeblocks\cybernetics\src\thermostat.cpp
 	"Thermostat.h"
 
-1582442453 c:\users\camer\codeblocks\cybernetics\include\thermostat.h
+1582755993 c:\users\camer\codeblocks\cybernetics\include\thermostat.h
 	<iostream>
 	<cmath>
 
-1582751145 c:\users\camer\codeblocks\cybernetics\include\room.h
+1582753540 c:\users\camer\codeblocks\cybernetics\include\room.h
 	"Thermostat.h"
 	<SFML/Graphics.hpp>
 	<string>
 
-1582752292 source:c:\users\camer\codeblocks\cybernetics\src\thermostatsim.cpp
+1582756353 source:c:\users\camer\codeblocks\cybernetics\src\thermostatsim.cpp
 	"ThermostatSim.h"
 
-1582752730 c:\users\camer\codeblocks\cybernetics\include\thermostatsim.h
+1582756351 c:\users\camer\codeblocks\cybernetics\include\thermostatsim.h
 	<Room.h>
 
-1582751560 source:c:\users\camer\codeblocks\cybernetics\src\room.cpp
+1582753669 source:c:\users\camer\codeblocks\cybernetics\src\room.cpp
 	"Room.h"
+
+1582756307 source:c:\users\camer\codeblocks\cybernetics\src\thermostatsimgui.cpp
+	"ThermostatSimGUI.h"
+
+1582756307 c:\users\camer\codeblocks\cybernetics\include\thermostatsimgui.h
 

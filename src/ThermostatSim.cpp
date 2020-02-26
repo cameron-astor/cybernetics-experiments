@@ -12,7 +12,7 @@ ThermostatSim::~ThermostatSim()
 
 void ThermostatSim::update()
 {
-    r.updateState();
+    r.updateState(debug);
 }
 
 void ThermostatSim::handlePlayerInput(sf::Keyboard::Key key, bool isPressed)
@@ -28,24 +28,11 @@ void ThermostatSim::handlePlayerInput(sf::Keyboard::Key key, bool isPressed)
     else if (key == sf::Keyboard::D) {
         if (!isPressed) {
             if (debug) {
-                std::cout << "false" << std::endl;
                 debug = false;
             } else {
-                std::cout << "true" << std::endl;
                 debug = true;
             }
         }
-    }
-
-}
-
-void ThermostatSim::handleMouseInput()
-{
-    if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
-    {
-        std::cout << "left click at " << sf::Mouse::getPosition(*windowPtr).x << "," << sf::Mouse::getPosition(*windowPtr).y << std::endl;
-        std::cout << getDialSize().x << " " << getDialSize().y << std::endl;
-        std::cout << r.getDialSprite()->getOrigin().x << " " << r.getDialSprite()->getOrigin().y << std::endl;
     }
 
 }

@@ -10,7 +10,6 @@ class ThermostatSim : public sf::Drawable
         ~ThermostatSim();
         void update();
         void handlePlayerInput(sf::Keyboard::Key key, bool isPressed);
-        void handleMouseInput();
 
         // rendering (overridden from Drawable)
         void draw(sf::RenderTarget& target, sf::RenderStates states) const

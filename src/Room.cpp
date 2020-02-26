@@ -40,7 +40,7 @@ double Room::getTemp()
     return this->temp;
 }
 
-void Room::updateState()
+void Room::updateState(bool debug)
 {
     // logic updates
 
@@ -65,15 +65,6 @@ void Room::updateState()
             this->setThermostat(readThermostat() - 0.25);
             dial.rotate(-1.f);
         }
-    }
-
-    // aircon/heater user setting (DEBUG)
-    if (this->tempCtrlUp) {
-        if (tempControlSetting < 5)
-            tempControlSetting++;
-    } else if (this->tempCtrlDown) {
-        if (tempControlSetting > -5)
-            tempControlSetting--;
     }
 
     //gui updates

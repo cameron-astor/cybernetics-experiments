@@ -13,9 +13,9 @@ class Thermostat
 	public:
 		Thermostat();
 		~Thermostat();
+
 		void turnDial(double input);
 		double getCurrentTarget();
-		void print();
         void readSensor(double temp);
         int getAirconSetting();
         void update();

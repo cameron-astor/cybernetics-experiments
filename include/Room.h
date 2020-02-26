@@ -17,7 +17,7 @@ class Room
         bool tempCtrlDown;
 
         double getTemp();
-        void updateState();
+        void updateState(bool debug);
         void setThermostat(double input);
         double readThermostat();
 

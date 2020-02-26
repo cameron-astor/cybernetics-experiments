@@ -10,11 +10,6 @@ void Thermostat::turnDial(double input)
 	this->target = input;
 }
 
-void Thermostat::print()
-{
-	std::cout << "Target: " << this->target << "\n" << "Current: " << this->current << "\n" << std::endl;
-}
-
 double Thermostat::getCurrentTarget()
 {
     return this->target;

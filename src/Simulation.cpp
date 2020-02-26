@@ -49,7 +49,6 @@ void Simulation::processEvents()
                 mWindow.close();
                 break;
         }
-        thermSim.handleMouseInput();
     }
 }
 
