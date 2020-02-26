@@ -13,30 +13,20 @@ class Room
 
         bool up;
         bool down;
-        bool tempCtrlUp;
-        bool tempCtrlDown;
-
         double getTemp();
-        void updateState(bool debug);
-        void setThermostat(double input);
         double readThermostat();
+        int getTempControl();
 
-        // GUI
-        sf::Text* getTestes() const;
-        sf::Text* getDebugText() const;
+        void update(bool debug);
+        void setThermostat(double input);
+
+        // Rendering
         sf::CircleShape* getDialSprite() const;
 
     private:
-        double temp;
+        double temp; // air temperature
         int tempControlSetting; // air conditioner, heater
-        Thermostat t;
-
-        // Text GUI
-        sf::Font font;
-        sf::Text text; // Main GUI text
-        sf::Text *textPtr;
-        sf::Text debugText; // Debug text
-        sf::Text *debugTextPtr;
+        Thermostat t; // the room's thermostat
 
         // Dial GUI
         sf::Texture dialTexture;

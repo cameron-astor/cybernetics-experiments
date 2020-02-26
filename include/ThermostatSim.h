@@ -2,6 +2,7 @@
 #define THERMOSTATSIM_H
 
 #include <Room.h>
+#include <ThermostatSimGUI.h>
 
 class ThermostatSim : public sf::Drawable
 {
@@ -14,16 +15,16 @@ class ThermostatSim : public sf::Drawable
         // rendering (overridden from Drawable)
         void draw(sf::RenderTarget& target, sf::RenderStates states) const
         {
-            target.draw(*r.getTestes());
+            target.draw(*gui.getTestes());
             target.draw(*r.getDialSprite());
             if (debug)
-                target.draw(*r.getDebugText());
+                target.draw(*gui.getDebugText());
         }
 
     private:
         sf::Window *windowPtr;
         Room r;
-        sf::Vector2f getDialSize();
+        ThermostatSimGUI gui;
         bool debug;
 
 };

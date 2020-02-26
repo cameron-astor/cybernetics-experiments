@@ -62,6 +62,7 @@
 		<Unit filename="include/TextureHolder.h" />
 		<Unit filename="include/Thermostat.h" />
 		<Unit filename="include/ThermostatSim.h" />
+		<Unit filename="include/ThermostatSimGUI.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/FpsCounter.cpp" />
 		<Unit filename="src/Room.cpp" />
@@ -69,6 +70,7 @@
 		<Unit filename="src/TextureHolder.cpp" />
 		<Unit filename="src/Thermostat.cpp" />
 		<Unit filename="src/ThermostatSim.cpp" />
+		<Unit filename="src/ThermostatSimGUI.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

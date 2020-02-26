@@ -1,6 +1,6 @@
 #include "ThermostatSim.h"
 
-ThermostatSim::ThermostatSim(sf::Window *window):windowPtr(window), debug(false)
+ThermostatSim::ThermostatSim(sf::Window *window):windowPtr(window), r(), gui(), debug(false)
 {
     //ctor
 }
@@ -12,7 +12,8 @@ ThermostatSim::~ThermostatSim()
 
 void ThermostatSim::update()
 {
-    r.updateState(debug);
+    r.update(debug);
+    gui.update(r.readThermostat(), r.getTemp(), r.getTempControl());
 }
 
 void ThermostatSim::handlePlayerInput(sf::Keyboard::Key key, bool isPressed)
@@ -21,10 +22,6 @@ void ThermostatSim::handlePlayerInput(sf::Keyboard::Key key, bool isPressed)
         r.up = isPressed;
     else if (key == sf::Keyboard::S)
         r.down = isPressed;
-    else if (key == sf::Keyboard::Up)
-        r.tempCtrlUp = isPressed;
-    else if (key == sf::Keyboard::Down)
-        r.tempCtrlDown = isPressed;
     else if (key == sf::Keyboard::D) {
         if (!isPressed) {
             if (debug) {
@@ -37,11 +34,3 @@ void ThermostatSim::handlePlayerInput(sf::Keyboard::Key key, bool isPressed)
 
 }
 
-sf::Vector2f ThermostatSim::getDialSize()
-{
-    sf::Vector2f spriteSize(
-    r.getDialSprite()->getTexture()->getSize().x * r.getDialSprite()->getScale().x,
-    r.getDialSprite()->getTexture()->getSize().y * r.getDialSprite()->getScale().y);
-
-    return spriteSize;
-}
