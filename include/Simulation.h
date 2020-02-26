@@ -1,7 +1,6 @@
 #ifndef SIMULATION_H
 #define SIMULATION_H
 
-#include <SFML/Graphics.hpp>
 #include <FpsCounter.h>
 #include <ThermostatSim.h>
 

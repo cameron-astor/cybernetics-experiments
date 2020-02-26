@@ -412,8 +412,7 @@
 	<SFML/Graphics/Drawable.hpp>
 	<SFML/Window/GlResource.hpp>
 
-1582355634 c:\users\camer\codeblocks\cybernetics\include\simulation.h
-	<SFML/Graphics.hpp>
+1582750756 c:\users\camer\codeblocks\cybernetics\include\simulation.h
 	<FpsCounter.h>
 	<ThermostatSim.h>
 
@@ -423,7 +422,7 @@
 1579596312 source:c:\users\camer\codeblocks\cybernetics\src\fpscounter.cpp
 	"FpsCounter.h"
 
-1582427823 source:c:\users\camer\codeblocks\cybernetics\src\simulation.cpp
+1582521033 source:c:\users\camer\codeblocks\cybernetics\src\simulation.cpp
 	"Simulation.h"
 
 1579659983 source:c:\users\camer\codeblocks\cybernetics\src\textureholder.cpp
@@ -436,25 +435,24 @@
 	<assert.h>
 	<SFML/Graphics.hpp>
 
-1582443745 source:c:\users\camer\codeblocks\cybernetics\src\thermostat.cpp
+1582448300 source:c:\users\camer\codeblocks\cybernetics\src\thermostat.cpp
 	"Thermostat.h"
 
 1582442453 c:\users\camer\codeblocks\cybernetics\include\thermostat.h
 	<iostream>
 	<cmath>
 
-1582428566 c:\users\camer\codeblocks\cybernetics\include\room.h
+1582751145 c:\users\camer\codeblocks\cybernetics\include\room.h
 	"Thermostat.h"
 	<SFML/Graphics.hpp>
 	<string>
 
-1582428610 source:c:\users\camer\codeblocks\cybernetics\src\thermostatsim.cpp
+1582752292 source:c:\users\camer\codeblocks\cybernetics\src\thermostatsim.cpp
 	"ThermostatSim.h"
 
-1582428553 c:\users\camer\codeblocks\cybernetics\include\thermostatsim.h
-	"SFML/Graphics.hpp"
+1582752730 c:\users\camer\codeblocks\cybernetics\include\thermostatsim.h
 	<Room.h>
 
-1582442304 source:c:\users\camer\codeblocks\cybernetics\src\room.cpp
+1582751560 source:c:\users\camer\codeblocks\cybernetics\src\room.cpp
 	"Room.h"
 

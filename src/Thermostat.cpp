@@ -6,7 +6,7 @@ Thermostat::~Thermostat(){}
 
 void Thermostat::turnDial(double input)
 {
-	std::cout << "Turning dial to " << input << " degrees. \n" << std::endl;
+	// std::cout << "Turning dial to " << input << " degrees. \n" << std::endl;
 	this->target = input;
 }
 

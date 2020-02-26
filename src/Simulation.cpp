@@ -2,7 +2,7 @@
 
 Simulation::Simulation()
 : mWindow(sf::VideoMode(640, 480), "Window!"), TimePerFrame(sf::seconds(1.f/60.f)),
-    counter(), thermSim(), rs()
+    counter(), thermSim(&mWindow), rs()
 {
 
 }
@@ -49,6 +49,7 @@ void Simulation::processEvents()
                 mWindow.close();
                 break;
         }
+        thermSim.handleMouseInput();
     }
 }
 
