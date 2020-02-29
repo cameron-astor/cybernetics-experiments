@@ -2,8 +2,10 @@
 #include <Simulation.h>
 
 // TODO
-// Keyboard input for changing thermostat value
-// the rest of the shit
+// Separate air-conditioner and heater units
+// Electricity consumption therefrom
+// Figure out more elegant ways to handle GUI,
+// particularly sprites whose positions are dependent on one another.
 
 int main() {
 

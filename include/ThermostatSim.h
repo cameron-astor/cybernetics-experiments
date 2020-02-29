@@ -16,7 +16,9 @@ class ThermostatSim : public sf::Drawable
         void draw(sf::RenderTarget& target, sf::RenderStates states) const
         {
             target.draw(*gui.getTestes());
+            target.draw(*gui.getThermostatCase());
             target.draw(*gui.getDialSprite());
+
             if (debug)
                 target.draw(*gui.getDebugText());
         }

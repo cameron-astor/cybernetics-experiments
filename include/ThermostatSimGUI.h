@@ -17,7 +17,9 @@ class ThermostatSimGUI
         void update(double thermostat, double roomTemp, int tempControl);
         sf::Text* getTestes() const;
         sf::Text* getDebugText() const;
+
         sf::CircleShape* getDialSprite() const;
+        sf::Sprite* getThermostatCase() const;
 
     private:
 
@@ -33,6 +35,11 @@ class ThermostatSimGUI
         sf::Texture *dialTexturePtr;
         sf::CircleShape dial;
         sf::CircleShape *dialPtr;
+
+        sf::Texture caseTexture;
+        sf::Texture *caseTexturePtr;
+        sf::Sprite thermostatCase;
+        sf::Sprite *thermostatCasePtr;
 
         void setupText();
         void setupDebugText();

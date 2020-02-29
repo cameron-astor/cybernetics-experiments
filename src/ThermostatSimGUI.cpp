@@ -1,9 +1,9 @@
 #include "ThermostatSimGUI.h"
 
 ThermostatSimGUI::ThermostatSimGUI():up(false), down(false), font(), text(), textPtr(nullptr), debugText(), debugTextPtr(nullptr),
-                                     dialTexture(), dialTexturePtr(&dialTexture), dial(150, 50), dialPtr(&dial)
+                                     dialTexture(), dialTexturePtr(&dialTexture), dial(150, 50), dialPtr(&dial), caseTexture(),
+                                     caseTexturePtr(&caseTexture), thermostatCase(), thermostatCasePtr(&thermostatCase)
 {
-
     setupText();
     setupDebugText();
     setupDial();
@@ -46,6 +46,11 @@ sf::Text* ThermostatSimGUI::getDebugText() const
     return debugTextPtr;
 }
 
+sf::Sprite* ThermostatSimGUI::getThermostatCase() const
+{
+    return thermostatCasePtr;
+}
+
 sf::CircleShape* ThermostatSimGUI::getDialSprite() const {
     return dialPtr;
 }
@@ -78,10 +83,17 @@ void ThermostatSimGUI::setupDebugText()
 void ThermostatSimGUI::setupDial()
 {
     // Load texture and setup sprite
+
+    caseTexture.loadFromFile("sprites/ThermostatCasing.png");
+    caseTexture.setSmooth(true);
+    thermostatCase.setTexture(*caseTexturePtr, false);
+    thermostatCase.setPosition(sf::Vector2<float>(150.f, 150.f));
+
+
     dialTexture.loadFromFile("sprites/dial.png");
     dialTexture.setSmooth(true);
     dial.setTexture(dialTexturePtr, false);
-    dial.setScale(sf::Vector2<float>(0.3f, 0.3f));
-    dial.setPosition(sf::Vector2<float>(150.f, 150.f));
+    dial.setScale(sf::Vector2<float>(0.34f, 0.34f));
+    dial.setPosition(sf::Vector2<float>(243.f, 225.f));
     dial.setOrigin(dial.getRadius(), dial.getRadius());
 }
