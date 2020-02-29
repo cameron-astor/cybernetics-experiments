@@ -12,17 +12,19 @@ ThermostatSim::~ThermostatSim()
 
 void ThermostatSim::update()
 {
-    r.update(debug);
+    r.update();
     gui.update(r.readThermostat(), r.getTemp(), r.getTempControl());
 }
 
 void ThermostatSim::handlePlayerInput(sf::Keyboard::Key key, bool isPressed)
 {
-    if (key == sf::Keyboard::W)
+    if (key == sf::Keyboard::W) {
         r.up = isPressed;
-    else if (key == sf::Keyboard::S)
+        gui.up = isPressed;
+    } else if (key == sf::Keyboard::S) {
         r.down = isPressed;
-    else if (key == sf::Keyboard::D) {
+        gui.down = isPressed;
+    } else if (key == sf::Keyboard::D) {
         if (!isPressed) {
             if (debug) {
                 debug = false;

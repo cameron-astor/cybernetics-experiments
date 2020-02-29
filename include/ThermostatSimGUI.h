@@ -11,9 +11,13 @@ class ThermostatSimGUI
         ThermostatSimGUI();
         ~ThermostatSimGUI();
 
+        bool up;
+        bool down;
+
         void update(double thermostat, double roomTemp, int tempControl);
         sf::Text* getTestes() const;
         sf::Text* getDebugText() const;
+        sf::CircleShape* getDialSprite() const;
 
     private:
 
@@ -23,6 +27,16 @@ class ThermostatSimGUI
         sf::Text *textPtr;
         sf::Text debugText; // Debug text
         sf::Text *debugTextPtr;
+
+        // Dial GUI
+        sf::Texture dialTexture;
+        sf::Texture *dialTexturePtr;
+        sf::CircleShape dial;
+        sf::CircleShape *dialPtr;
+
+        void setupText();
+        void setupDebugText();
+        void setupDial();
 };
 
 #endif // THERMOSTATSIMGUI_H

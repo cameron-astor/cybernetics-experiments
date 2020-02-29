@@ -1,16 +1,8 @@
 #include "Room.h"
 
-Room::Room():up(false), down(false), temp(65), tempControlSetting(0), t(),
-                        dialTexture(), dialTexturePtr(&dialTexture), dial(150, 50), dialPtr(&dial)
+Room::Room():up(false), down(false), temp(65), tempControlSetting(0), t()
 {
 
-    // Load texture and setup sprite
-    dialTexture.loadFromFile("sprites/dial.png");
-    dialTexture.setSmooth(true);
-    dial.setTexture(dialTexturePtr, false);
-    dial.setScale(sf::Vector2<float>(0.3f, 0.3f));
-    dial.setPosition(sf::Vector2<float>(150.f, 150.f));
-    dial.setOrigin(getDialSprite()->getRadius(), getDialSprite()->getRadius());
 }
 
 Room::~Room()
@@ -23,7 +15,7 @@ double Room::getTemp()
     return this->temp;
 }
 
-void Room::update(bool debug)
+void Room::update()
 {
     // logic updates
 
@@ -41,12 +33,10 @@ void Room::update(bool debug)
     if (this->up) {
         if (readThermostat() < 100.0) {
             this->setThermostat(readThermostat() + 0.25);
-            dial.rotate(1.f);
         }
     } else if (this->down) {
         if (readThermostat() > 30.0) {
             this->setThermostat(readThermostat() - 0.25);
-            dial.rotate(-1.f);
         }
     }
 }
@@ -66,8 +56,3 @@ int Room::getTempControl()
     return this->tempControlSetting;
 }
 
-
-sf::CircleShape* Room::getDialSprite() const
-{
-    return this->dialPtr;
-}

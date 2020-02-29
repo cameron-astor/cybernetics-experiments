@@ -17,22 +17,14 @@ class Room
         double readThermostat();
         int getTempControl();
 
-        void update(bool debug);
+        void update();
         void setThermostat(double input);
 
-        // Rendering
-        sf::CircleShape* getDialSprite() const;
 
     private:
         double temp; // air temperature
         int tempControlSetting; // air conditioner, heater
         Thermostat t; // the room's thermostat
-
-        // Dial GUI
-        sf::Texture dialTexture;
-        sf::Texture *dialTexturePtr;
-        sf::CircleShape dial;
-        sf::CircleShape *dialPtr;
 };
 
 #endif // ROOM_H
