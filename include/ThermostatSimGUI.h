@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include <SFML/Graphics.hpp>
+#include <ThermometerGUI.h>
 
 class ThermostatSimGUI
 {
@@ -20,6 +20,8 @@ class ThermostatSimGUI
 
         sf::CircleShape* getDialSprite() const;
         sf::Sprite* getThermostatCase() const;
+        sf::Sprite* getThermometer() const;
+        sf::RectangleShape* getMercury() const;
 
     private:
 
@@ -40,6 +42,9 @@ class ThermostatSimGUI
         sf::Texture *caseTexturePtr;
         sf::Sprite thermostatCase;
         sf::Sprite *thermostatCasePtr;
+
+        // Thermometer GUI
+        ThermometerGUI thermometer;
 
         void setupText();
         void setupDebugText();

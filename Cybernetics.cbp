@@ -61,6 +61,7 @@
 		<Unit filename="include/Room.h" />
 		<Unit filename="include/Simulation.h" />
 		<Unit filename="include/TextureHolder.h" />
+		<Unit filename="include/ThermometerGUI.h" />
 		<Unit filename="include/Thermostat.h" />
 		<Unit filename="include/ThermostatSim.h" />
 		<Unit filename="include/ThermostatSimGUI.h" />
@@ -70,6 +71,7 @@
 		<Unit filename="src/Room.cpp" />
 		<Unit filename="src/Simulation.cpp" />
 		<Unit filename="src/TextureHolder.cpp" />
+		<Unit filename="src/ThermometerGUI.cpp" />
 		<Unit filename="src/Thermostat.cpp" />
 		<Unit filename="src/ThermostatSim.cpp" />
 		<Unit filename="src/ThermostatSimGUI.cpp" />

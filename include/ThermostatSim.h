@@ -18,6 +18,9 @@ class ThermostatSim : public sf::Drawable
             target.draw(*gui.getTestes());
             target.draw(*gui.getThermostatCase());
             target.draw(*gui.getDialSprite());
+            target.draw(*gui.getMercury());
+            target.draw(*gui.getThermometer());
+
 
             if (debug)
                 target.draw(*gui.getDebugText());

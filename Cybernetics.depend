@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1582959650 source:c:\users\camer\codeblocks\cybernetics\main.cpp
+1583128734 source:c:\users\camer\codeblocks\cybernetics\main.cpp
 	<SFML/Graphics.hpp>
 	<Simulation.h>
 
@@ -422,7 +422,7 @@
 1579596312 source:c:\users\camer\codeblocks\cybernetics\src\fpscounter.cpp
 	"FpsCounter.h"
 
-1583122803 source:c:\users\camer\codeblocks\cybernetics\src\simulation.cpp
+1583123419 source:c:\users\camer\codeblocks\cybernetics\src\simulation.cpp
 	"Simulation.h"
 
 1579659983 source:c:\users\camer\codeblocks\cybernetics\src\textureholder.cpp
@@ -449,23 +449,29 @@
 1582937316 source:c:\users\camer\codeblocks\cybernetics\src\thermostatsim.cpp
 	"ThermostatSim.h"
 
-1582940145 c:\users\camer\codeblocks\cybernetics\include\thermostatsim.h
+1583127172 c:\users\camer\codeblocks\cybernetics\include\thermostatsim.h
 	<Room.h>
 	<ThermostatSimGUI.h>
 
 1582937375 source:c:\users\camer\codeblocks\cybernetics\src\room.cpp
 	"Room.h"
 
-1582959918 source:c:\users\camer\codeblocks\cybernetics\src\thermostatsimgui.cpp
+1583127719 source:c:\users\camer\codeblocks\cybernetics\src\thermostatsimgui.cpp
 	"ThermostatSimGUI.h"
 
-1582939244 c:\users\camer\codeblocks\cybernetics\include\thermostatsimgui.h
+1583127019 c:\users\camer\codeblocks\cybernetics\include\thermostatsimgui.h
 	<iostream>
 	<string>
-	<SFML/Graphics.hpp>
+	<ThermometerGUI.h>
 
 1582960919 source:c:\users\camer\codeblocks\cybernetics\src\heater.cpp
 	"Heater.h"
 
 1583122834 c:\users\camer\codeblocks\cybernetics\include\heater.h
+
+1583128008 c:\users\camer\codeblocks\cybernetics\include\thermometergui.h
+	<SFML/Graphics.hpp>
+
+1583128664 source:c:\users\camer\codeblocks\cybernetics\src\thermometergui.cpp
+	"ThermometerGUI.h"
 
