@@ -7,8 +7,11 @@ class Heater
     public:
         Heater();
         ~Heater();
+        void update();
 
     private:
+        int pwrSetting;
+        double pwrConsumption;
 
 };
 

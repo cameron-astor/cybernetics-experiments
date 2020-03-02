@@ -9,3 +9,8 @@ Heater::~Heater()
 {
     //dtor
 }
+
+void Heater::update()
+{
+
+}

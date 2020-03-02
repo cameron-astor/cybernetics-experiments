@@ -456,7 +456,7 @@
 1582937375 source:c:\users\camer\codeblocks\cybernetics\src\room.cpp
 	"Room.h"
 
-1583127719 source:c:\users\camer\codeblocks\cybernetics\src\thermostatsimgui.cpp
+1583128825 source:c:\users\camer\codeblocks\cybernetics\src\thermostatsimgui.cpp
 	"ThermostatSimGUI.h"
 
 1583127019 c:\users\camer\codeblocks\cybernetics\include\thermostatsimgui.h
@@ -469,8 +469,9 @@
 
 1583122834 c:\users\camer\codeblocks\cybernetics\include\heater.h
 
-1583128008 c:\users\camer\codeblocks\cybernetics\include\thermometergui.h
+1583131850 c:\users\camer\codeblocks\cybernetics\include\thermometergui.h
 	<SFML/Graphics.hpp>
+	<iostream>
 
 1583128664 source:c:\users\camer\codeblocks\cybernetics\src\thermometergui.cpp
 	"ThermometerGUI.h"
