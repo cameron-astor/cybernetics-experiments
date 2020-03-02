@@ -56,6 +56,7 @@
 			<Add directory="C:/Users/camer/C++/SFML-2.5.1/lib" />
 		</Linker>
 		<Unit filename="include/FpsCounter.h" />
+		<Unit filename="include/Heater.h" />
 		<Unit filename="include/ResourceHolder.h" />
 		<Unit filename="include/Room.h" />
 		<Unit filename="include/Simulation.h" />
@@ -65,6 +66,7 @@
 		<Unit filename="include/ThermostatSimGUI.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/FpsCounter.cpp" />
+		<Unit filename="src/Heater.cpp" />
 		<Unit filename="src/Room.cpp" />
 		<Unit filename="src/Simulation.cpp" />
 		<Unit filename="src/TextureHolder.cpp" />

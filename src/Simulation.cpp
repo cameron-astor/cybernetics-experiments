@@ -1,7 +1,7 @@
 #include "Simulation.h"
 
 Simulation::Simulation()
-: mWindow(sf::VideoMode(640, 480), "Window!"), TimePerFrame(sf::seconds(1.f/60.f)),
+: mWindow(sf::VideoMode(1920, 1080), "Window!"), TimePerFrame(sf::seconds(1.f/60.f)),
     counter(), thermSim(&mWindow), rs()
 {
 
@@ -44,6 +44,9 @@ void Simulation::processEvents()
                 break;
             case sf::Event::KeyReleased:
                 thermSim.handlePlayerInput(event.key.code, false);
+                break;
+            case sf::Event::Resized:
+                mWindow.setView(sf::View(sf::FloatRect(0, 0, event.size.width, event.size.height)));
                 break;
             case sf::Event::Closed:
                 mWindow.close();

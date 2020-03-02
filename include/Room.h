@@ -2,7 +2,6 @@
 #define ROOM_H
 
 #include "Thermostat.h"
-#include <SFML/Graphics.hpp>
 #include <string>
 
 class Room

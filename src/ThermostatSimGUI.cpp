@@ -75,7 +75,7 @@ void ThermostatSimGUI::setupDebugText()
     debugText.setCharacterSize(12);
     debugText.setStyle(sf::Text::Regular);
     debugText.setString("Temp control: ");
-    debugText.setPosition(50.f, 300.f);
+    debugText.setPosition(400.f, 100.f);
     this->debugTextPtr = &this->debugText;
 
 }
