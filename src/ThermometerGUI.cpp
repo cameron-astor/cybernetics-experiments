@@ -31,5 +31,4 @@ sf::RectangleShape* ThermometerGUI::getMercury() const
 void ThermometerGUI::update(double roomTemp)
 {
     mercury.setSize(sf::Vector2f(30.f, -30.f - (roomTemp * 1.8)));
-    std::cout << roomTemp * 1.8 << std::endl;
 }

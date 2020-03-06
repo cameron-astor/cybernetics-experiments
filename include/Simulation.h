@@ -25,6 +25,7 @@ class Simulation
         FpsCounter counter; // FPS counter
         ThermostatSim thermSim;
         sf::RenderStates rs;
+        sf::View view;
 };
 
 #endif // SIMULATION_H
