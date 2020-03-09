@@ -1,13 +1,14 @@
 #ifndef THERMOSTAT_H
 #define THERMOSTAT_H
 
+#include <Appliance.h>
 #include <iostream>
 #include <cmath>
 
 // An experiment in cybernetics.
 // A thermostat with a range of 40 to 100 degrees.
 
-class Thermostat
+class Thermostat : public Appliance
 {
 
 	public:

@@ -1,6 +1,9 @@
 #include "Thermostat.h"
 
-Thermostat::Thermostat():target(65), current(65), airconSetting(0){}
+Thermostat::Thermostat():target(65), current(65), airconSetting(0)
+{
+    wattage = 5;
+}
 
 Thermostat::~Thermostat(){}
 
@@ -62,3 +65,4 @@ void Thermostat::update()
 {
     calculateAirconSetting();
 }
+

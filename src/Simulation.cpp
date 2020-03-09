@@ -12,24 +12,24 @@ Simulation::~Simulation()
     //dtor
 }
 
-void Simulation::run()
+void Simulation::run() // Game loop
 {
     sf::Clock clock;
-    sf::Time timeSinceLastUpdate = sf::Time::Zero;
+    sf::Time timeSinceLastUpdate = sf::Time::Zero; // start clock
 
     while (mWindow.isOpen()) {
 
-        counter.startCounter();
+        counter.startCounter(); // fps counter
+
         timeSinceLastUpdate += clock.restart();
         while (timeSinceLastUpdate > TimePerFrame) {
             timeSinceLastUpdate -= TimePerFrame;
             processEvents();
             update(TimePerFrame);
         }
-
         render();
 
-        counter.stopAndPost();
+        counter.stopAndPost(); // fps counter
     }
 }
 

@@ -1,6 +1,6 @@
 #include "Room.h"
 
-Room::Room():up(false), down(false), temp(65), tempControlSetting(0), t()
+Room::Room():up(false), down(false), temp(65), tempControlSetting(0), t(), h()
 {
 
 }
@@ -21,6 +21,8 @@ void Room::update()
 
     // update thermostat
     this->t.update();
+    // update heater
+    this->h.update();
 
     // aircon/heater affects air temp
     this->temp = this->temp + ((double)(0.005 * this->tempControlSetting));

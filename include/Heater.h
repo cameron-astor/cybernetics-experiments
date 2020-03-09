@@ -1,8 +1,9 @@
 #ifndef HEATER_H
 #define HEATER_H
 
+#include <Appliance.h>
 
-class Heater
+class Heater : public Appliance
 {
     public:
         Heater();
@@ -11,7 +12,6 @@ class Heater
 
     private:
         int pwrSetting;
-        double pwrConsumption;
 
 };
 

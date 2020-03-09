@@ -1,8 +1,8 @@
 #include "Heater.h"
 
-Heater::Heater()
+Heater::Heater(): pwrSetting(0)
 {
-    //ctor
+    wattage = 2000;
 }
 
 Heater::~Heater()
